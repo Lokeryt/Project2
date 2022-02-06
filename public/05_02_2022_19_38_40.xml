@@ -1,0 +1,23 @@
+<Vacs>
+    <Vacancy>
+        <post>AAA</post>
+        <type>Особый</type>
+        <salary>20000</salary>
+        <amount>10</amount>
+        <external_id>1</external_id>
+    </Vacancy>
+    <Vacancy>
+        <post>BBB</post>
+        <type>Полная ставка</type>
+        <salary>30000</salary>
+        <amount>20</amount>
+        <external_id>2</external_id>
+    </Vacancy>
+    <Vacancy>
+        <post>CCC</post>
+        <type>Полставки</type>
+        <salary>30000</salary>
+        <amount>30</amount>
+        <external_id>3</external_id>
+    </Vacancy>
+</Vacs>
