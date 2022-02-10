@@ -35,32 +35,20 @@ class PostsController extends Controller
 
     public function get($id)
     {
-        $vac = Vac::find($id);
-        if (is_null($vac))
-        {
-            return response()->json(['error' => true, 'message' => 'Not found'], 404);
-        }
+        $vac = Vac::findOrFail($id);
         return response()->json($vac, 200);
     }
 
     public function update(VacancyRequest $req, $id)
     {
-        $vac = Vac::find($id);
-        if (is_null($vac))
-        {
-            return response()->json(['error' => true, 'message' => 'Not found'], 404);
-        }
+        $vac = Vac::findOrFail($id);
         $vac->update($req->validated());
         return response()->json($vac, 200);
     }
 
     public function delete($id)
     {
-        $vac = Vac::find($id);
-        if (is_null($vac))
-        {
-            return response()->json(['error' => true, 'message' => 'Not found'], 404);
-        }
+        $vac = Vac::findOrFail($id);
         $vac->delete();
         return response()->json(null, 204);
     }
